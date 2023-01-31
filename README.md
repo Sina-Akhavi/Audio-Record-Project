@@ -6,7 +6,7 @@ This audio stream project is done by using Node.js. it runs on a server. Express
 you can play and upload audios.
 
 
-For using this app, enter this command in terminal inorder to run the server:
+For using this app, enter this command in terminal in order to run the server:
 
 
 npm run devStart
