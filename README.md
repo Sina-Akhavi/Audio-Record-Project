@@ -7,4 +7,6 @@ you can play and upload audios.
 
 
 For using this app, enter this command in terminal inorder to run the server:
+
+
 npm run devStart
