@@ -1,0 +1,296 @@
+.borders {
+  border: 1px solid #cccccc;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  margin: 12px;
+}
+
+.top-border {
+  padding: 100px 0px;
+  text-align: center;
+  position:relative;
+}
+
+.borders:hover, /*div.title-bar:hover,*/ .play-box:hover {
+  border: .5px solid orangered;
+}
+
+.btn {
+  background-color: white;
+  color: orangered;
+  font-weight: bold;
+  border: 1px solid;
+  border-top-color: orangered;
+  border-right-color: orangered;
+  border-left-color: gray;
+  border-bottom-color: gray;
+  border-radius: 4px;
+  padding: 5px 5px;
+}
+
+.btn:active {
+  background-color: rgb(196, 196, 196);
+}
+
+.record-btn {
+  background-color: orangered;
+  color: white;
+  border-color: orangered;
+}
+
+.class-type-section {
+  float: left; /* important */
+  height: 80%; /* important */
+  width: 33.3%;  /* important */ 
+  /* margin: 0px; */
+  padding: 16px;
+  border-top: none;
+  margin-top: 0;
+}
+
+.btn:hover {
+  box-shadow:3px 5px 2px gray;
+  cursor: pointer;
+} 
+
+
+
+.add-class-btn {
+  padding: 8px 12px;    
+  float: right;
+  color: orangered;
+}
+
+
+
+label.stop-record-auto {
+  color: red;
+  font-size: medium;
+  /* margin: 12px; */
+}
+
+input.search-margin {
+  float: right;
+  width: 70%;
+  border: none;
+  height: 30px;
+}
+
+div.title-bar {
+  background-color: #f3f3f3;
+  padding: 10px 0px;
+  margin: 14px 14px;
+  float: left;
+  clear:right;
+  border-radius: 6px;
+  width: 60%;
+}
+
+.title {
+  color: black;
+  display: inline;
+  margin-left: 22%;
+}
+
+
+input.margin {
+  margin-left: 12px;
+} 
+
+div.row {
+  float: left;
+  padding: 15px 0px;
+  margin-left: 15px;
+  width: 58%;
+}
+
+
+select.level {
+  width: 26%;
+  float: left;
+  margin-top: 4.2%;
+  margin-left: 4%;
+  background-color: #dededeb3;
+}
+
+div.more-sign:after {
+  content: '\2807';
+  font-size: 35px;
+  cursor: pointer;
+  margin-right: 35px;
+  
+  /* position: relative;
+  margin-top: 15px; */
+}
+
+
+div.more-sign:hover {
+  color: orangered;
+}
+
+div.datetime {
+  position: absolute;
+  margin-left: 36.4%;
+  margin-top: 35px;
+}
+
+div.play-box {
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  width: 26%;
+  float: left;
+  padding: 7px;
+  height: 85px;
+}
+
+.play-button {
+  background-color: orangered;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.play-pause-margin {
+  margin-top: 2px; 
+  text-align: center;
+  margin-left: 1.5px;
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  margin-top: 20px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(109, 109, 109);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(83, 83, 83);
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.stop-record {
+  background-color: green;
+  height: 40px;
+  width: 40px;
+}
+
+.popup-container {
+  position: fixed;
+  bottom: 45%;
+  left: 40%;
+  display: none;
+  /* background-color: white; */
+  width: 23%;
+  height: 30%;
+}
+
+.form-popup {
+  /* max-width: 700px; */
+  padding: 15px 30px;
+  border-radius: 2%;
+  background-color: white;
+}
+
+#overlayer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(2,2,2,0.4);
+  top: 0;
+  display: none;
+}
+
+.save-button {
+  background-color: rgb(222, 117, 20);
+  color: white;
+  padding: 6px 6px;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 2px;
+  /* border: none; */
+}
+
+.overlayer_2 {
+  position: fixed;
+  display: none;
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(2,2,2,0.4);
+  top: 0;
+  bottom: 0;
+}
+
+.form-container2 {
+  position: absolute;
+  width:22%;
+  /* height: 23%; */
+  padding: 16px;
+  background-color: white;
+  bottom: 40%;
+  left: 40%;
+  
+}
+
+
+#class-name:hover {
+  border: 3px solid rgb(10, 190, 190);
+}
+
+#select-class {
+  width: 100%; 
+  background-color: rgb(205, 208, 211);
+  border: 2px solid rgb(51, 49, 49);
+  border-radius: 2px;
+}
+
+form.form-container2 button, form.form-container2 input:last-child {
+  padding: 6px 8px;
+  border-radius: 3px;
+}
+
+form.form-container2 input:last-child {
+  background-color: orange;
+}
+
+form.form-container2 input:last-child:hover {
+  background-color: rgb(228, 152, 11);
+}
+
+.stop-btn {
+  border-radius: 50%;
+  background-color: orangered;
+  font-size: x-large;
+  height: 9vh;
+  width: 9vh;  
+  
+  left: 100px;
+}
+

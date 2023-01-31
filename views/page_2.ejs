@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Front-End </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="page_styles_2.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  
+  
+</head>
+
+<body>
+
+<div class="borders top-border" > 
+  <button class="btn" id="upload"> Upload file </button>
+  <button class="btn record-btn" id="aRecord"> Record Now </button>
+  <input type="file" hidden>
+
+</div>
+
+<input type="checkbox" id="record-stop-auto" name="record-stop-auto" value="record-stop-auto" class="margin">
+<label for="record-stop-auto" class="stop-record-auto"> Automatically stop recording after 
+<input type="number" min="1" name="after-seconds" id="after-seconds" style="width: 45px;"> seconds. </label>
+<hr style="color: #cccccc; margin-bottom: 0px; margin-left: 13px; color: #f3f3f3;">
+
+<div class="borders class-type-section">
+  Class Types
+  <button class="btn add-class-btn" onclick="showPopup()"> Add Class </button><br><br><br>
+  
+  <input type="checkbox" id="all">
+  <label for="all"> All <br><br><br> </label>
+  
+  <input type="search" class="search-margin" placeholder="search text" name="search-text" id="search-text"> 
+
+  <% for (let i = 0; i < classNames.length; i++) { %>
+      
+      <input type="checkbox" id="<%= classNames[i]%>" value="<%= classNames[i]%>">
+      <label for="<%= classNames[i] %>"> <%= classNames[i] %> <br><br><br> </label>
+      
+  <% } %> 
+
+</div>
+
+<div id="overlayer">
+
+  <div class="popup-container" id="popupId">
+    <form action="" class="form-popup">
+      <h3 style="margin-top: 0; margin-bottom: 0;">Class</h3><br>
+      <label for="class-name">Name</label><br>
+      <input type="text" name="className" id="class-name" style="width:100%;"><br><br><br><br>
+      <button type="button" value="Save" class="save-button">Save</button>
+      <button type="button" onclick="closePopup()" class="save-button">Dismiss</button>
+    </form>
+
+  </div>
+
+</div>
+
+<div class="overlayer_2">
+
+
+    <form action="" class="form-container2">
+      <h3 style="margin-top: 0;">Save recorded sound</h4>
+        <label for="class-name">Name <br></label>
+        <input type="text" name="class-name" id="track-name" style="height: 20px; border-radius: 3px;"><br><br>
+        <label for="class-type">Class type <br></label>
+        <select name="select-class" id="track-class">
+          <% for (let i = 0; i < classNames.length; i++) { %> 
+            <option value=<%= classNames[i] %>><%= classNames[i] %></option>
+          <% } %>
+        </select><br><br>
+        <button type="button" onclick="closePopup()"> Save & Stop </button>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <button type="button" id="save_new_sound">save & record</button>
+    </form>  
+      
+</div>
+
+<div class="title-bar">
+  <div class="title" style="margin-left: 8px; margin-right: 30px;">Name</div>
+  <div class="title">Class Type</div>
+  <div class="title">Date</div>
+  <div class="title" style="margin-left: 24.3%;">More</div>
+</div>
+
+<div id="play-boxes-container">
+
+</div>
+
+<script src="./myScripts.js"></script>
+
+</body>
+
+</html>
+
